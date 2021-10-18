@@ -1,5 +1,5 @@
-@mixin button_normal {
-    background-color: #FCB72B;
+@mixin buttons {
+    background-color: $yellow;
     padding: 14px 47px;
     font-family: 'Space Mono';
     font-weight: bold;
@@ -7,10 +7,10 @@
     line-height: 25px;
     text-align: center;
     color: #FFFFFF;
-}
-
-@mixin button_hover {
-    background-color: #fff;
-    border: 1px solid #FCB72B;   
-    color: #FCB72B;
+    
+    &:hover {
+        background-color: #fff;
+        border: 1px solid $yellow;
+        color: $yellow;
+    }
 }

@@ -1,11 +1,16 @@
 .site-header {
     position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
+    z-index: 99;
+    background-color: #fff;
 }
 
 .header__container {
     align-items: center;
     justify-content: space-between;
+    padding: 22px 20px;
     // background-color: $yellow;
 }
 
@@ -30,14 +35,14 @@
         color: #939CAA;
         margin: 16px;
         display: inline-block;
+
+        &:hover {
+            color: #FCB72B;
+        }
     }
 }
 
-.header__btn {
-    @include button_normal
-
-    &:hover {
-        @include button_hover
-    }
+.header__btn, .hero__btn {
+    @include buttons
 }
 
