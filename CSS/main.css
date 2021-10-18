@@ -62,4 +62,8 @@ h2, h3, h4 {
   border: none;
   clip: rect(0 0 0 0);
 }
+
+body {
+  background-color: #FCB72B;
+}
 /*# sourceMappingURL=main.css.map */

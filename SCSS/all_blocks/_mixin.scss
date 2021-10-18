@@ -1,0 +1,21 @@
+@mixin button_normal {
+    background-color: #FCB72B;
+    padding: 14px 47px;
+    font-family: 'Space Mono';
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+@mixin button_hover {
+    border: 1px solid #FCB72B;
+    padding: 14px 47px;
+    font-family: 'Space Mono';
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+    color: #FCB72B;
+}
