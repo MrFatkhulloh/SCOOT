@@ -7,12 +7,14 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+}
+
+img {
     vertical-align: middle;
 }
 
 .container {
-    max-width: 1400px;
+    max-width: 1146px;
     padding-left: 20px;
     padding-right: 20px;
     margin-left: auto;
@@ -21,12 +23,16 @@ body {
 
 .df {
     display: flex;
-    justify-content: center;
 }
 
 h2,h3,h4 {
     margin: 0;
     padding: 0;
+    font-family: 'Space Mono' Arial, sans-serif;    
+}
+
+a {
+    text-decoration: none;
 }
 
 .visually-hidden {

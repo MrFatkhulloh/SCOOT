@@ -1,3 +1,21 @@
-body {
-    background-color: $yellow;
+.header__container {
+    align-items: center;
+}
+
+.header__img {
+    margin-right: 58.18px;
+}
+
+.header__nav__list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    
+    a {
+        font-family: 'Space Mono';
+        font-weight: bold;
+        font-size: 15px;
+        line-height: 25px;
+        color: #939CAA;
+    }
 }
