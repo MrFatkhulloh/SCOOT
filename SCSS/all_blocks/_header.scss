@@ -1,4 +1,15 @@
+.site-header {
+    position: fixed;
+    width: 100%;
+}
+
 .header__container {
+    align-items: center;
+    justify-content: space-between;
+    // background-color: $yellow;
+}
+
+.nav-wrapper {
     align-items: center;
 }
 
@@ -17,5 +28,16 @@
         font-size: 15px;
         line-height: 25px;
         color: #939CAA;
+        margin: 16px;
+        display: inline-block;
     }
 }
+
+.header__btn {
+    @include button_normal
+
+    &:hover {
+        @include button_hover
+    }
+}
+
