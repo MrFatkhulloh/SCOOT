@@ -5,6 +5,8 @@
     margin-bottom: 160px;
 }
 
+
+
 .hero-wrapper {
     padding-top: 153px;
     padding-bottom: 152px;
@@ -57,4 +59,37 @@
 
 .hero__btn {
     margin-left: 95px;
+}
+
+@media only screen and (max-width:768px) {
+    .hero__container {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .hero__btn {
+        margin-left: 0;
+    }
+
+    .hero__text::before {
+        display: none;
+    }
+
+    .hero__heading {
+        margin: 0;
+        margin-bottom: 24px;
+    }
+
+    .hero__text {
+        margin: 0;
+        margin-bottom: 46px;
+        max-width: 573px;
+    }
+
+    .hero__text::after {
+        left: -67%;
+        // bottom: -149%;
+        transform: translateY(60%);
+    }
 }
