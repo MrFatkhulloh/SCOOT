@@ -160,3 +160,17 @@
     
 }
 
+@media only screen and (max-width:768px) {
+    .order__container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .order__heading {
+        margin-bottom: 40px;
+    }
+
+    .app-btn {
+        margin-top: 0;
+    }
+}

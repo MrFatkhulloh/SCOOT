@@ -52,14 +52,33 @@
         color: $dim-grey;
         max-width: 350px;
     }
+}
 
-    // &__img::before {
-    //     position: absolute;
-    //     top: 25%;
-    //     left: -40%;
-    //     display: block;
-    //     width: 500px;
-    //     height: 15px;
-    //     background-color: $light-grey;
-    // }
+@media only screen and (max-width:768px) {
+
+    .short__list {
+        flex-direction: column;
+        margin-bottom: 145px;
+    }
+
+    .short__item {
+        display: flex;
+        margin: 0;
+    }
+
+    .short__img {
+        margin-right: 79px;
+    }
+
+    .short__text {
+        margin-bottom: 40px;
+    }
+
+    .short__line {
+        transform: translateY(-110%);
+        right: 67%;
+        width: 15px;
+        height: 117.5%;
+        overflow: hidden;
+    }
 }
