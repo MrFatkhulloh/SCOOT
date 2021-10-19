@@ -1,0 +1,87 @@
+.rounds {
+    
+    &__list {
+        list-style-type: none;
+        flex-direction: column;
+        margin-bottom: 200px;
+    }
+    
+    &__item {
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 160px;
+
+        &:nth-child(even) .rounds__info {
+            order: 1;
+        }
+
+        &:nth-child(n+3) {
+            .rounds__img-wrapper::before {   
+                top: 0;
+                left: 60%;   
+            }
+        }
+
+        &:nth-child(even) {
+            .rounds__img-wrapper::before {
+                content: url(./../../images/hero_img/img2.svg);
+                top: 0;
+                left: -60%;        
+            }
+
+            .rounds__img-wrapper::after {
+                left: -115%;
+            }
+        }
+    }
+
+    &__info {
+        max-width: 445px;
+    }
+    
+    &__heading {
+        font-weight: bold;
+        font-size: 48px;
+        line-height: 48px;
+        letter-spacing: -2.14286px;
+        color: $dark-navy;
+        margin-bottom: 24px;
+    }
+    
+    &__text {
+        font-size: 15px;
+        line-height: 25px;
+        color: $dim-grey;
+        margin-bottom: 40px;
+    }
+
+    &__btn {
+        @include buttons
+    }
+
+    &__img-wrapper {
+        position: relative;
+        &::before {
+            content: url(./../../images/rounds/rounds_1__arrow.svg);
+            position: absolute;
+            bottom: -8px;
+            left: -25%;
+            z-index: 2;
+        }
+
+        &::after {
+            content: "";
+            width: 445px;
+            height: 445px;
+            background-color: $light-grey;
+            border-radius: 50%;
+            position: absolute;
+            top: 0;
+            left: 115%;
+        }
+    }
+
+    &__img {
+        border-radius: 50%;
+    }
+}

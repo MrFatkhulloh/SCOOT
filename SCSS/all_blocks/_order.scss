@@ -1,0 +1,117 @@
+.order {
+    background-color: $dark-navy;
+    
+    &__container {
+        position: relative;
+        align-items: center;
+        justify-content: space-between;
+        padding: 102px 20px;
+        
+        .bg-wrapper {
+            position: relative;
+        }
+        
+        .bg-rounds {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translateX(-170%);
+            border-radius: 50%;
+            background-color: $dark-navy;
+            border: 15px solid $light-grey;
+            opacity: 0.1;
+            width: 347px;
+            height: 347px;
+            
+            &::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                right: calc(100% + 56px);
+                border-radius: 50%;
+                background-color: $dark-navy;
+                border: 15px solid $light-grey;
+                width: 347px;
+                height: 347px;
+            }
+
+            &::after {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: calc(100% + 56px);
+                border-radius: 50%;
+                background-color: $light-grey;
+                width: 347px;
+                height: 347px;
+            }
+        }
+    }
+    
+    &__heading {
+        position: relative;
+        font-family: Space Mono;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 48px;
+        line-height: 48px;
+        letter-spacing: -2.14286px;
+        color: #FFFFFF;
+        max-width: 415px;
+    }
+    
+    .app-btn {
+        position: relative;
+        background-color: $snow;
+        padding: 23px 15px 9px 52px;
+        font-family: 'Space Mono';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: -0.892857px;
+        margin: 9px;
+        border-radius: 4px;
+        z-index: 3;
+        
+        a {
+            color: $dark-navy;
+        }
+    }
+    
+    .appstore::before {
+        content: url(./../../images/order/apple.svg);
+        position: absolute;
+        top: 14px;
+        left: 16px;
+    }
+    
+    .appstore::after {
+        content: "Available on the";
+        position: absolute;
+        top: 8px;
+        left: 52px;
+        font-size: 10px;
+        line-height: 15px;
+        letter-spacing: -0.446429px;
+    }
+    
+    .googleplay::before {
+        content: url(./../../images/order/play.svg);
+        position: absolute;
+        top: 14px;
+        left: 16px;
+    }
+    
+    .googleplay::after {
+        content: "Get it on";
+        position: absolute;
+        top: 8px;
+        left: 52px;
+        font-size: 10px;
+        line-height: 15px;
+        letter-spacing: -0.446429px;
+    }
+    
+}
