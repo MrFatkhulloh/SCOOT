@@ -4,11 +4,16 @@
     box-sizing: border-box;
 }
 
+html {
+    height: 100%;
+}
+
 body {
     margin: 0;
     padding: 0;
     padding-top: 96px;
     font-family: 'Lexend Deca', Helvetica, sans-serif;
+    height: 100%;
 }
 
 img {

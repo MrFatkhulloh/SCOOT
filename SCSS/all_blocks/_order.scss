@@ -1,17 +1,24 @@
 .order {
     background-color: $dark-navy;
+    position: relative;
+    
+    overflow: hidden;
     
     &__container {
         position: relative;
         align-items: center;
         justify-content: space-between;
         padding: 102px 20px;
+        overflow: hidden;
         
         .bg-wrapper {
             position: relative;
         }
         
-        .bg-rounds {
+        
+    }
+
+    .bg-rounds {
             content: "";
             position: absolute;
             top: 50%;
@@ -47,7 +54,6 @@
                 height: 347px;
             }
         }
-    }
     
     &__heading {
         position: relative;
@@ -59,6 +65,7 @@
         letter-spacing: -2.14286px;
         color: #FFFFFF;
         max-width: 415px;
+        z-index: 4;
     }
     
     .app-btn {
@@ -113,5 +120,43 @@
         line-height: 15px;
         letter-spacing: -0.446429px;
     }
+
+    .bg-rounds {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 111%;
+        transform: translateX(-170%);
+        border-radius: 50%;
+        background-color: $dark-navy;
+        border: 15px solid $light-grey;
+        opacity: 0.1;
+        width: 347px;
+        height: 347px;
+        
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: calc(100% + 56px);
+            border-radius: 50%;
+            background-color: $dark-navy;
+            border: 15px solid $light-grey;
+            width: 347px;
+            height: 347px;
+        }
+    
+        &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: calc(100% + 56px);
+            border-radius: 50%;
+            background-color: $light-grey;
+            width: 347px;
+            height: 347px;
+        }
+    }
     
 }
+
