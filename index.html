@@ -129,12 +129,18 @@
                             </a>
                         </div>
                         <div class="rounds__img-wrapper">
-                            <img class="rounds__img"
-                            src="./images/rounds/rounds_1.jpg" 
-                            alt="img"
-                            width="445"
-                            height="445"
-                            >
+                            <picture>
+                                <source srcset="./images/rounds/rounds_1.avif 1x, ./images/rounds/rounds_1@2x.avif" type="image/avif" media="(min-width:1145px)">
+                                <source srcset="./images/rounds/rounds_1.webp 1x, ./images/rounds/rounds_1@2x.webp" type="image/webp" media="(min-width:1145px)">
+                                <source srcset="./images/rounds/rounds_1.img 1x, ./images/rounds/rounds_1@2x.img" type="image/jpeg" media="(min-width:1145px)">
+
+                                <img class="rounds__img"
+                                src="./images/rounds/rounds_1.jpg"
+                                alt="img"
+                                width="445"
+                                height="445"
+                                >
+                            </picture>
                         </div>
                     </li>
                     <li class="rounds__item df">
