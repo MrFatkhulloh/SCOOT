@@ -88,7 +88,7 @@
     }
     
     .appstore::before {
-        content: url(./../../images/order/apple.svg);
+        content: url(./../images/order/apple.svg);
         position: absolute;
         top: 14px;
         left: 16px;
@@ -105,7 +105,7 @@
     }
     
     .googleplay::before {
-        content: url(./../../images/order/play.svg);
+        content: url(./../images/order/play.svg);
         position: absolute;
         top: 14px;
         left: 16px;

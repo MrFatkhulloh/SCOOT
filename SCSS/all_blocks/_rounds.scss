@@ -24,7 +24,7 @@
 
         &:nth-child(even) {
             .rounds__img-wrapper::before {
-                content: url(./../../images/hero_img/img2.svg);
+                content: url(./../images/hero_img/img2.svg);
                 top: 0;
                 left: -58%;        
             }
@@ -63,7 +63,7 @@
     &__img-wrapper {
         position: relative;
         &::before {
-            content: url(./../../images/rounds/rounds_1__arrow.svg);
+            content: url(./../images/rounds/rounds_1__arrow.svg);
             position: absolute;
             bottom: -8px;
             left: -29%;
